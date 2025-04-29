@@ -10,11 +10,11 @@ export interface Scholarship {
 export const scholarships: Scholarship[] = [
   {
     id: "1",
-    title: "Beasiswa Untuk Negeri 2025",
-    image: "/images/scholarship-1.jpeg",
-    requirements: ["Semester 4-7", "Mahasiswa S1/D4"],
-    deadline: "2025-04-20",
-    registrationLink: "https://bit.ly/BeasiswaDUN2025",
+    title: "Beasiswa Amartha STEAM",
+    image: "/images/scholarship-8.jpeg",
+    requirements: ["Semester 4", "Mahasiswi S1/D4"],
+    deadline: "2025-06-15",
+    registrationLink: "https://steam.beasiswa-amartha.org/",
   },
   {
     id: "2",

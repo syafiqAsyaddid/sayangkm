@@ -46,42 +46,47 @@ export default function TentangKesmah() {
             </div>
 
             {/* Program Kerja */}
-            <div className="bg-white/10 backdrop-blur rounded-lg p-8 max-w-6xl mx-auto mt-12">
-              <h2 className="text-2xl font-bold mb-4 text-center">Program Kerja</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                {[
-                  {
-                    title: "Hotline Sayang KM dan Podcast",
-                    desc: "Ruang bagi KM IPB untuk bertanya dan bercerita perihal kehidupan kampus melalui media sosial (Instagram, Twitter, dan WhatsApp).",
-                  },
-                  {
-                    title: "Kabar Kesmah dan Schoter (Scholarship Center)",
-                    desc: "Informasi terkait kesejahteraan mahasiswa seperti akademik, fasilitas, update terbaru serta beasiswa bagi KM IPB.",
-                  },
-                  {
-                    title: "Safe Space (Amunisi, Art Therapy, Seminar Mental Health)",
-                    desc: "Program yang mengulik seputar kesehatan mental dan fisik KM IPB selama menjalani aktivitas perkuliahan.",
-                  },
-                  {
-                    title: "Donor Darah",
-                    desc: "Program yang dapat memberikan kesempatan bagi KM IPB untuk mendonorkan darahnya secara sukarela.",
-                  },
-                  {
-                    title: "PELUK KM (Peduli UKT) dan Beasiswa KM",
-                    desc: "Portal Peduli UKT bagi KM IPB yang merasa kurang mampu dalam membayar UKT.",
-                  },
-                  {
-                    title: "Kesmah Visit dan Forkesmah",
-                    desc: "Program yang melibatkan seluruh pimpinan dan staf Departemen Kesejahteraan Mahasiswa wilayah se-IPB University dalam melayani KM IPB, melakukan koordinasi, monitoring, serta tracking.",
-                  },
-                ].map((proker, index) => (
-                  <div key={index} className="bg-white text-black rounded-lg p-6 flex flex-col gap-3 text-center">
-                    <h3 className="font-bold mb-2">{proker.title}</h3>
-                    <p className="text-sm">{proker.desc}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+<div className="bg-white/10 backdrop-blur rounded-lg p-8 max-w-6xl mx-auto mt-12">
+  <h2 className="text-2xl font-bold mb-4 text-center">Program Kerja</h2>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+    {[  // List of Program Kerja items
+      {
+        title: "Kesmah Visit dan Forkesmah",
+        desc: "Program yang melibatkan seluruh pimpinan dan staf Departemen Kesejahteraan Mahasiswa wilayah se-IPB University dalam melayani KM IPB, melakukan koordinasi, monitoring, serta tracking.",
+      },
+      {
+        title: "Kabar Kesmah dan Schoter (Scholarship Center)",
+        desc: "Informasi terkait kesejahteraan mahasiswa seperti akademik, fasilitas, update terbaru serta beasiswa bagi KM IPB.",
+      },
+      {
+        title: "Safe Space (Amunisi, Art Therapy, Seminar Mental Health)",
+        desc: "Program yang mengulik seputar kesehatan mental dan fisik KM IPB selama menjalani aktivitas perkuliahan.",
+      },
+      {
+        title: "Donor Darah",
+        desc: "Program yang dapat memberikan kesempatan bagi KM IPB untuk mendonorkan darahnya secara sukarela.",
+      },
+      {
+        title: "PELUK KM (Peduli UKT) dan Beasiswa KM",
+        desc: "Portal Peduli UKT bagi KM IPB yang merasa kurang mampu dalam membayar UKT.",
+      },
+      {
+        title: "Hotline Sayang KM dan Podcast",
+        desc: "Ruang bagi KM IPB untuk bertanya dan bercerita perihal kehidupan kampus melalui media sosial (Instagram, Twitter, dan WhatsApp).",
+      },
+      {
+        title: "Heart To Heart",
+        desc: "Heart To Heart merupakan program Kesmah BEM KM IPB yang membagikan pembalut gratis di beberapa toilet di setiap fakultas di IPB, guna menciptakan ruang yang lebih aman dan nyaman untuk perempuan.",
+      },
+    ].map((proker, index) => (
+      <div key={index} className={`bg-white text-black rounded-lg p-6 flex flex-col gap-3 text-center ${index === 0 ? "col-span-1 md:col-span-3 flex justify-center" : "col-span-1"}`}>
+        <h3 className="font-bold mb-2">{proker.title}</h3>
+        <p className="text-sm">{proker.desc}</p>
+      </div>
+    ))}
+  </div>
+</div>
+
           </div>
         </div>
       </section>
