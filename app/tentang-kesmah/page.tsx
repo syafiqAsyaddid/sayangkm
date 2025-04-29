@@ -105,7 +105,7 @@ export default function TentangKesmah() {
               />
             </div>
             <p className="text-center text-lg italic">
-              Pengurus Kementerian Kesejahteraan Mahasiswa BEM KM IPB University 2024/2025
+              Pengurus Kementerian Kesejahteraan Mahasiswa BEM KM IPB University 2025/2026
             </p>
           </div>
         </div>
