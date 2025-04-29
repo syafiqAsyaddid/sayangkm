@@ -9,7 +9,7 @@ import type React from "react"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "BEM KM IPB 2025/2026",
+  title: "SCHOLARSHIP CENTER KESMAH 2024/2025",
   description: "Badan Eksekutif Mahasiswa Keluarga Mahasiswa IPB",
 }
 
