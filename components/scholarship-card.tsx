@@ -1,13 +1,18 @@
+"use client"
 import Image from "next/image"
 import Link from "next/link"
+import { useEffect, useState } from "react"
 import type { Scholarship } from "@/lib/types"
 
 export function ScholarshipCard({ scholarship }: { scholarship: Scholarship }) {
   const { title, image, requirements, deadline, registrationLink } = scholarship
 
-  // These operations are safe now because the component only renders on the client
   const deadlineDate = new Date(deadline)
-  const isDeadlinePassed = deadlineDate < new Date()
+  const [isDeadlinePassed, setIsDeadlinePassed] = useState(false)
+
+  useEffect(() => {
+    setIsDeadlinePassed(deadlineDate < new Date())
+  }, [deadlineDate])
 
   const formatDeadline = (date: Date) => {
     const options: Intl.DateTimeFormatOptions = {
